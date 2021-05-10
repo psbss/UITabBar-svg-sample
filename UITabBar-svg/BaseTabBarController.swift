@@ -17,11 +17,11 @@ class BaseTabBarController: UITabBarController {
         var viewControllers = [UINavigationController]()
 
         let firstTabViewController = FirstViewController()
-        firstTabViewController.tabBarItem = UITabBarItem(title: "tab1", image: UIImage(named: "imageSVG"), selectedImage: nil)
+        firstTabViewController.tabBarItem = UITabBarItem(title: "tab1", image: UIImage(named: "ImageSVG"), selectedImage: nil)
         viewControllers.append(UINavigationController(rootViewController: firstTabViewController))
 
         let secondTabViewController = SecondViewController()
-        secondTabViewController.tabBarItem = UITabBarItem(title: "tab2", image: UIImage(named: "imagePDF"), selectedImage: nil)
+        secondTabViewController.tabBarItem = UITabBarItem(title: "tab2", image: UIImage(named: "ImagePDF"), selectedImage: nil)
         viewControllers.append(UINavigationController(rootViewController: secondTabViewController))
 
         setViewControllers(viewControllers, animated: false)
